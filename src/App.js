@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {
           LoginButton,
+          LogoutButton,
           Text,
           useSession,
           CombinedDataProvider,
@@ -32,7 +33,9 @@ function App() {
             <Text properties={[
                 "http://www.w3.org/2006/vcard/ns#fn",
                 "http://xmlns.com/foaf/0.1/name",
-              ]} />
+              ]}
+            />
+            <LogoutButton />
           </div>
         </CombinedDataProvider>
       ) : (
