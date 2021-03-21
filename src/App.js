@@ -7,6 +7,7 @@ import {
           CombinedDataProvider,
        } from '@inrupt/solid-ui-react';
 import './App.css';
+import AddTodo from './components/AddTodo';
 
 const authOptions = {
   clientName: 'Solid To-do app',
@@ -37,6 +38,9 @@ function App() {
             />
             <LogoutButton />
           </div>
+          <section>
+            <AddTodo />
+          </section>
         </CombinedDataProvider>
       ) : (
         <div className="message">
